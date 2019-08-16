@@ -1,3 +1,17 @@
+@keyframes fontSizeChange {
+  0% {
+    font-size: 1rem;
+    color: red;
+  }
+  50% {
+    font-size: 2rem;
+    color: cyan;
+  }
+  100% {
+    font-size: 5rem;
+    color: green;
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -175,6 +189,8 @@ nav {
 nav h1 {
   font-size: 4rem;
   text-align: center;
+  animation-name: fontSizeChange;
+  animation-duration: 4s;
 }
 @media (max-width: 500px) {
   nav h1 {
