@@ -1,1 +1,24 @@
 // Mixins Here
+.spacing(@padding, @margin) {
+  padding: @padding;
+  margin: @margin;
+}
+
+.custom-layout(@justify) {
+  display: flex;
+  justify-content: @justify;
+}
+
+.button-style(@color, @bg-color, @border-radius, @height, @width, @padding) {
+  color: @color;
+  background-color: @bg-color;
+  font-size: 1.6rem;
+  border-radius:@border-radius;
+  height: @height; 
+  width: @width;
+  padding-top: @padding;
+  &:hover {
+    background-color: @color;
+    color: @bg-color;
+  }
+}
