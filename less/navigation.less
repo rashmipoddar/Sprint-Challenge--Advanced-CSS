@@ -1,1 +1,33 @@
 // Navigation code here
+
+nav {
+  background-color: @nav-bg;
+  .spacing(0.5%, 0%);
+  margin-top: 1%;
+  @media @mobile {
+    margin: 0;
+    padding: 0;
+  }
+
+  h1 {
+    font-size: 4rem;
+    text-align: center;
+    .animation(fontSizeChange, 4s);
+    @media @mobile {
+      padding-bottom: 3px;
+    }
+  }
+  div {
+    .custom-layout(center);
+
+    a {
+      text-decoration: none;
+      color: @nav-font;
+      font-size: 1.6rem;
+      .spacing(1%, 0);
+      @media @mobile {
+        .spacing(2%, 0);
+      }
+    }
+  }
+}
